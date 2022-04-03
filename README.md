@@ -21,3 +21,6 @@ Para las entradas incorrectas, se ha comprobado una con un DNI de pocos digitos 
 
 ### ProcessControllerTest
 En esta clase se han hecho comprobaciones para el POST y otros dos para la version legacy en los que se introducen los datos del usuario y se confirma el resultado de dichos datos.
+
+## Link Github
+https://github.com/SofiaBarquero/practica-6
