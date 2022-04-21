@@ -1,27 +1,19 @@
-# Practica 6: Testing de una aplicacion de Spring Boot
+<b> Practica 6: Testing de una aplicacion de Spring Boot </b>
 
-## Objetivo de la práctica
+Se nos pide añadir tests a las siguientes clases en Spring Boot:
 
-djfhfg
-Dado un desarrollo de Spring Boot, es necesario anhadir tests a las siguientes clases:
+- DNI & Telefono (Unit Tests) 
+- ProcessController (E2E Tests) 
 
-- DNI & Telefono (Unit Tests) (Cada clase tiene un metodo y varias casuisticas para probar)
-- ProcessController (E2E Tests) (2 endpoints)
+<b> Desarrollo </b>
 
-## Desarrollo 
+<b> Test Telefono </b>
+Realizamos un test para comprobar el formato de teléfono que se está introduciendo. 
+Se realizan dos comprobaciones, la primera es para 9 dígitos sin prefijo y la segunda para 9 dígitos con prefijo. 
+Para comprobar que se detectan las entradas incorrectas, se comprueba con un teléfono de pocos dígitos y formato incorrecto. 
 
-### TelefonoTest
-Se han realizado test para comprobar el formato del telefono que se introduzca. 
-En primer lugar, dos comprobaciones de formatos correctos, uno de nueve digitos y otro de nueve digitos con prefijo.
-Para las entradas incorrectas, se ha comprobado una con un telefono de pocos digitos(ocho) y una con un formato incorrecto (con una letra intercalada).
+<b> Test Dni </b>
+Realizamos un test para comprobar el formato de DNI que se está introduciendo. 
+La primera comprobación es para un formato de 8 números + 1 letra válida al final. 
+Para comprobar que se detectan las entradas incorrectas, se comprueba con un DNI de pocos dígitos y con letras incorrectas. 
 
-### DNITest
-Se han realizado test para comprobar el formato del DNI que se introduzca.
-En primer lugar, una comprobacion de formato correcto, con ocho numeros y una letra valida.
-Para las entradas incorrectas, se ha comprobado una con un DNI de pocos digitos (siete numeros y una letra), una con un formato incorrecto (con una letra en el inicio), una con el caracter invalido (la Ñ) y , por ultimo, una con el formato incorrecto con las combinaciones restringidas.
-
-### ProcessControllerTest
-En esta clase se han hecho comprobaciones para el POST y otros dos para la version legacy en los que se introducen los datos del usuario y se confirma el resultado de dichos datos.
-
-## Link Github
-https://github.com/SofiaBarquero/practica-6
