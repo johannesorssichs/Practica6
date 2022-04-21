@@ -28,7 +28,7 @@ public class ProcessServiceImpl implements ProcessService {
 
             //Realizar algun proceso complejo con esos datos
 
-            logger.info("Procesamiento correcto");
+            logger.info("Procesamiento corecto");
             return new ProcessStep1Response(true,"Validado");
         }
 
